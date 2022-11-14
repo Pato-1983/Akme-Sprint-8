@@ -22,7 +22,7 @@ const controller = {
                     fisrtName: user.first_name,
                     lastname: user.last_name,
                     email: user.email,
-                    detail:`localhost:3030/users/detail/${user.id}`
+                    detail:`https://akmesprint8.herokuapp.com/users/detail/${user.id}`
                 })
             })
 

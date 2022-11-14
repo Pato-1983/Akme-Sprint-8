@@ -33,7 +33,7 @@ const controller = {
                     name: product.name,
                     description: product.description,
                     características: [product.Category.name, product.Color.name],
-                    detail:`localhost:3030/productos/detail/${product.id}`
+                    detail:`https://akmesprint8.herokuapp.com/productos/detail/${product.id}`
                 })
             })
 
@@ -92,8 +92,8 @@ const controller = {
         
             data = {
                 product,
-                imgUrl : `http://localhost:3030/images/${product.Images[0].name}`,
-                url: `http://localhost:3030/products/detail/${product.id}`
+                imgUrl : `https://akmesprint8.herokuapp.com/images/${product.Images[0].name}`,
+                url: `https://akmesprint8.herokuapp.com/products/detail/${product.id}`
             }
             res.status(200).json({data}) 
         } catch (error) {
@@ -123,8 +123,8 @@ const controller = {
             products.rows.forEach(product =>{
                  data.push({
                     product,
-                    imgUrl : `http://localhost:3030/images/${product.Images[0].name}`,
-                    url: `http://localhost:3030/products/detail/${product.id}`
+                    imgUrl : `https://akmesprint8.herokuapp.com/images/${product.Images[0].name}`,
+                    url: `https://akmesprint8.herokuapp.com/products/detail/${product.id}`
                 })
             })
 
